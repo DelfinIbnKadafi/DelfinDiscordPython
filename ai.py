@@ -10,11 +10,11 @@ client = Groq(
 
 def request(prompt):
     response = client.chat.completions.create(
-        model="openai/gpt-oss-20b",
+        model="openai/gpt-oss-120b",
         messages=[
             {
                 "role": "system",
-                "content": "You are a helpful AI assistant name Delfin Python."
+                "content": "You are a helpful AI assistant name Delfin Python. Always answer with clear, clean, and short. You have brother named Delfin BOT make from Javascript, your developer/pencipta is Delfin"
             },
             {
                 "role": "user",
